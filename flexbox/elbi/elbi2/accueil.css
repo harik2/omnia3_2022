@@ -1,0 +1,45 @@
+.pad0{
+    padding: 0;
+}
+
+#intro{
+position: relative;
+}
+#introi{
+position: absolute;
+top: 0;
+}
+
+#introi p{
+    font-size: 0.9rem;
+}
+#introi h3{
+    font-size: 6vw;
+    letter-spacing: -5px;
+    line-height: 12vh;
+}
+#introi h4{
+    font-size: 7vw;
+    color: rgb(87, 4, 62);
+}
+#text{
+   border: 2px solid rgb(87, 4, 62);; 
+}
+#text h6{
+background: rgb(87, 4, 62);
+color: white;
+font-size: 2.5vw;
+padding:10px 0;
+letter-spacing: -1px;
+}
+#text span{
+    position: relative;
+    top: -22px;
+    font-size: 1.5vw;
+    left: 7px;
+}
+#text p {
+    color: black;
+    text-align: center;
+    font-size: 2.5vw;
+}

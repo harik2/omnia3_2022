@@ -1,0 +1,83 @@
+@import url("reset.css");
+*{
+    font-family: sans-serif !important;
+}
+#catalogue {
+  width: 1200px;
+  height: auto;
+  background: rgba(0, 128, 0, 0.096);
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+.produit {
+    text-align: center;
+  /* font-size: 5em; */
+  width: 25%;
+  height: auto;
+  border: 1px solid black;
+padding: 10px;
+display: flex;flex-flow:column nowrap ;
+  box-sizing: border-box;
+  justify-content: space-between;
+/* overflow-y: hidden; */
+}
+.image{
+    width: 100%;
+    height: 280px;
+    /* border: solid; */
+}
+.image > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.info{
+    width: 100%;
+    height: auto;
+    /* border: solid; */
+    
+}
+.info > h4{
+    font-size: 1.6em;
+    line-height: 50px;
+}
+.info > a {
+ background: teal;
+ color: white;
+ padding: 10px 5px;
+ display: inline-block;
+ border-radius: 6px;
+ text-decoration: none;
+}
+@media screen and (max-width:756px){
+    #catalogue{
+        background: white;
+        width: 100%;
+    }
+    .produit{
+        /* width: 100%; */
+        width: 50%;
+    }
+}
+@media screen and (max-width:346px) {
+    #catalogue{
+        width: 100%;
+    }
+    .produit{
+        border: none;
+        width: 100%;
+    }
+    .image {
+        display: none;
+        /* visibility: hidden; */
+    }
+}
+@media print and (orientation:landscape) {
+    #catalogue{
+        width: 100%;
+    }
+    .info > a {
+        display: none;
+    }
+}

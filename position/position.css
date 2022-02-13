@@ -1,0 +1,37 @@
+.zone {
+  /* border: solid 2px black; */
+  width: 200px;
+  height: 200px;
+  font-size: 10em;
+  text-align: center;
+  color: white;
+}
+
+#zone1 {
+  background: red;
+}
+#zone2 {
+  background: green;
+  position: fixed;
+  
+  right: 0;
+  top: 0;
+  z-index: 1;
+  
+}
+#zone3 {
+    background: blue;
+    position: relative;
+    z-index: 1;
+}
+#zone4 {
+  background: purple;
+}
+
+#container{
+    position: relative;
+    border: 2px solid black;
+    height: 400px;
+    width: 1000px;
+    background: pink;
+}

@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cairo', sans-serif;
+
+}
+body{
+  background:url('images/images_bayern_stade_allianz_arena_allianz_arena_.jpg') no-repeat fixed  ;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  /* background-attachment: fixed; */
+}
+
+nav ul {
+  background: rgb(18, 19, 19);
+  list-style: none;
+  box-shadow: 1px 1px 5px black;
+  text-align: center;
+}
+nav ul li {
+  /* border: solid; */
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 10px;
+  color: whitesmoke;
+  text-decoration: none;
+}
+main{
+    width: 1200px;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+}
+main ul {
+list-style: none;
+/* background: pink; */
+}
+main ul li{
+    border: solid;
+    display: inline-block;
+    width:  calc( 25% - 8px);
+    background: rgba(0, 0, 0, 0.281);
+    
+}
+main ul li img {
+width: 100%;
+}
+/* header */
+#intro{
+  width: 100%;
+  /* vh : viewport height */
+  height: calc(100vh - 50px);
+  background: rgba(112, 1, 107, 0.2);
+  position: relative;
+}
+#video{
+  position: absolute;
+  background: green;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+#video > video{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+#texte{
+  background: rgba(0, 0, 0, 0.1);
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* height: 200px; */
+
+}
+#texte h1{
+  text-align: center;
+}
+#btn{
+  width: 380px;
+  height: 100px;
+  /* background: teal; */
+  margin: auto;
+  position: relative;
+}
+#btn > a{
+  font-size: 1.5em;
+  position: absolute;
+  display: inline-block;
+  color: white;
+  
+}
+#essai{
+background: deeppink;
+left: 0;
+border-radius: 30px;
+height:50px;
+line-height: 50px;
+padding: 0 20px;
+text-align: center;
+/* color: white; */
+
+}
+#more{
+right: 0;
+}

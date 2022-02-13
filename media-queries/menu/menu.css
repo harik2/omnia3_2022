@@ -1,0 +1,65 @@
+header {
+  background: #2d2d2d;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+header > * {
+  /* border: solid 1px red; */
+  color: white;
+}
+#menu > a {
+  color: white;
+  display: inline-block;
+  padding: 0 15px;
+ 
+  line-height: 50px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+
+}
+#check, label{
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    label{
+        display: inline-block;
+    }
+  #menu {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    position: absolute;
+    top: 50px;
+    transition: 1s;
+    /* right: 5px; */
+    left: 0;
+    width: 100%;
+  }
+  #menu a {
+    border-bottom:2px  solid red;
+  }
+  #check:checked + #menu{
+      /* display: none; */
+      /* right: -100%; */
+      left:-100%;
+
+      transition: 1s;
+  }
+  label>i.fas{
+      color: red;
+      font-size: 2rem;
+  }
+  header:hover .fas{
+      color: white;
+      transform: rotate(180deg);
+      transition: 1s;
+  }
+}

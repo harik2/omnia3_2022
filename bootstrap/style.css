@@ -1,0 +1,14 @@
+
+.violet{
+    background: rgba(128, 0, 128, 0.178) !important;
+}
+.minh{
+    height: calc(100vh - 62px);
+}
+.back{
+    background: url("images/hero-bg.jpg");
+    background-size: cover;
+}
+.logo{
+    width: 150px;
+}
